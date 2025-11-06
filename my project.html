@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sai Kiran | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <a href="#about" class="button">About</a>
+      <a href="#skills" class="button">Skills</a>
+      <a href="#projects" class="button">Projects</a>
+      <a href="#contact" class="button">Contact</a>
+    </nav>
+    <button id="theme-toggle" class="theme-btn">🌙 Dark Mode</button>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <h2>KODETI SAI KIRAN</h2>
+      <img src="c:\Users\sai kiran kodeti\OneDrive\Desktop\e-commerce\assets\sai.jpg" alt="Sai Kiran Photo" />
+      <p>Hi! I'm Sai Kiran, a 4th-year B.Tech student at 
+        <em>Swarnandhra College of Engineering and Technology</em>, Narasapuram.
+      </p>
+      <p>I’m passionate about web development and love building creative digital experiences.</p>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="edu-container">
+        <div class="edu-card">
+          <h3>B.Tech – Information Technology</h3>
+          <p><strong>Swarnandhra College of Engineering & Technology</strong>, Narasapuram</p>
+          <p>2022 – 2026 | CGPA: 8/10</p>
+        </div>
+
+        <div class="edu-card">
+          <h3>Intermediate – MPC</h3>
+          <p><strong>SVKP&PV Junior college</strong>, Penugonda</p>
+          <p>2020 – 2022 | Percentage: 77%</p>
+        </div>
+
+        <div class="edu-card">
+          <h3>SSC</h3>
+          <p><strong>Oxford english school</strong>, Penugonda</p>
+          <p>2019 – 2020 | GPA: 10/10</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+      <h2>My Skills</h2>
+      <ul>
+        <li>Python Basics</li>
+        <li>HTML & CSS</li>
+        <li>Java Basics</li>
+        <li>SQL Basics</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <img src="c:\Users\sai kiran kodeti\OneDrive\Desktop\e-commerce\assets\project 1.jpg" alt="Billing System Project" />
+          <h3>Billing System (Python)</h3>
+          <p>A Python Tkinter-based billing software that helps calculate total prices, generate bills, and manage receipts efficiently.</p>
+          <a href="https://github.com/KodetiSaiKiran1630/billing-system-python.git" class="project-btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <img src="c:\Users\sai kiran kodeti\OneDrive\Desktop\e-commerce\assets\project 2.jpg" alt="Portfolio Project" />
+          <h3>My Portfolio Website</h3>
+          <p>A responsive personal portfolio made using HTML, CSS, and JavaScript with dark mode and animations.</p>
+          <a href="#" class="project-btn">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME SECTION -->
+    <section id="resume">
+      <h2>My Resume</h2>
+      <p>Here’s a quick look at my resume. You can also download it below 👇</p>
+      <a href="c:\Users\sai kiran kodeti\Downloads\Kiran Resume.pdf" download class="resume-btn">📄 Download Resume</a>
+      
+      <!-- Optional: Embedded Resume Preview -->
+      <iframe src="c:\Users\sai kiran kodeti\Downloads\Kiran Resume.pdf" class="resume-preview" title="Sai Kiran Resume"></iframe>
+    </section>
+
+   <!-- CONTACT SECTION -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Let’s connect! Whether it’s about a project, collaboration, or just to say hi 👋</p>
+
+  <div class="contact-wrapper">
+    <form id="contact-form">
+      <div class="input-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="input-group">
+        <label>Gender</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" id="male"> Male</label>
+          <label><input type="radio" name="gender" id="female"> Female</label>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label>Interested Languages</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" id="html"> HTML</label>
+          <label><input type="checkbox" id="python"> Python</label>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="number">Contact Number</label>
+        <input type="text" id="number" placeholder="Enter your contact number">
+      </div>
+
+      <button type="submit" class="submit">📩 Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <h3>Get In Touch</h3>
+      <p><strong>Email:</strong> <a href="mailto:saikodeti1630@gmail.com">saikodeti1630@gmail.com</a></p>
+      <p><strong>Phone:</strong> +91 6300269083</p>
+      <p><strong>Location:</strong> Penugonda, Andhra Pradesh</p>
+    </div>
+  </div>
+</section>
+
+  
+  <footer>
+    <p>© 2025 Sai Kiran | All Rights Reserved</p>
+  </footer>
+
+  
+  <script>
+    // Dark Mode Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      themeToggle.textContent =
+        document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
+    });
+
+    document.querySelector("#contact-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Thanks for contacting me! I'll reach out soon. 😊");
+    });
+  </script>
+</body>
+</html>
